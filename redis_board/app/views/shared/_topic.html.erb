@@ -1,0 +1,9 @@
+<tr><td style="padding: 20px 0 0 0">Author: <%= topic.user.name %></td></tr>
+<tr><td style="font-weight: bold; font-size: 19px; padding: 0 0 10 0px"><%= topic.name %></td></tr>
+<tr><td>
+  <table style="padding-left: 10px">
+    <tbody>
+      <%= render partial: "shared/post", collection: topic.posts %>
+    </tbody>
+  </table>
+</td></tr>
